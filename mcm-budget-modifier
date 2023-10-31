@@ -1,0 +1,10 @@
+- name: MCM budget modifier
+  hosts: localhost
+  tasks:
+    - name: get budget
+      uri:
+       url: 'https://mcmstudies-57a4.restdb.io/rest/raid' 
+       headers:
+        Content-Type: application/json
+        x-apikey: 65402ccf5ca6f38510505f1a
+       body: '{"depermant":"{{ var_dep }}"}'
