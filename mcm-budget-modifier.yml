@@ -4,7 +4,7 @@
     - name: get budget
       uri:
        url: "https://{{ url }}/rest/raid"
-       method: POST
+       method: GET
        body_format: json 
        headers:
         Content-Type: application/json
