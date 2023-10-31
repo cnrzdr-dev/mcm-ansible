@@ -3,7 +3,7 @@
   tasks:
     - name: get budget
       uri:
-       url: "https://{{ url }}/rest/raid"
+       url: "https://{{ url }}/rest/mon"
        method: GET
        body_format: json 
        headers:
