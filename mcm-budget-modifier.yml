@@ -9,4 +9,3 @@
        headers:
         Content-Type: application/json
         x-apikey: "{{ apikey }}"
-       body: '{"depermant":"{{ var_dep }}"}'
