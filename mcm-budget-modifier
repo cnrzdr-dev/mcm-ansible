@@ -1,1 +1,10 @@
-
+- name: MCM budget modifier
+  hosts: localhost
+  tasks:
+    - name: get budget
+      uri:
+       url: "https://{{ url }}/rest/raid" 
+       headers:
+        Content-Type: application/json
+        x-apikey: "{{ apikey }}"
+       body: '{"depermant":"{{ var_dep }}"}'
